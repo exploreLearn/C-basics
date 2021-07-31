@@ -1,0 +1,43 @@
+int main()
+{
+    int count =0;
+    char a;    
+    scanf("%c",&a);
+    
+    char v[10] = {'a','e','i','o','u','A','E','I','O','U'};
+    
+    for(int i =0; i<9;i++)
+    {
+        if(a == v[i])
+        {   count++;
+            break;  }
+        
+    }
+    
+    if(count != 0)    
+    {       printf("Vowel");    }
+    else
+    {   printf("consonant");    }
+    
+    
+    return 0;
+}
+
+
+//other method can also to check case
+
+int main()
+{
+    char a;    
+    scanf("%c",&a);
+
+    if(a=='a'||a=='e'||a=='i'||a=='o'||a=='u')    
+    {       printf("lower case vowel");    }
+    else if(a=='A'||a=='E'||a=='I'||a=='O'||a=='U')    
+    {       printf("upper case vowel");    }
+    else
+    {   printf("consonant");    }
+    
+    
+    return 0;
+}
