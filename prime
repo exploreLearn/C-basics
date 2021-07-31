@@ -1,0 +1,30 @@
+int chk_prime(int x)
+{
+    int count = 0;
+    
+    for(int i=2; i<x; i++)
+    {
+        if(x%i == 0)    //i.e. divisible by i
+        {
+           count++;
+           break;
+        }
+    
+    }
+    
+    if(count ==0)   {   printf("prime"); }
+    else            {   printf("not prime"); }
+    
+}
+   
+
+
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    //printf("%d",a);
+    
+    chk_prime(a);
+}
+
