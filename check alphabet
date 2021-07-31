@@ -1,0 +1,56 @@
+//check alphabet or not-------------
+// a. by alphabet
+//b. by ASCII value
+// consider case sensitivity of alphabet
+
+/*
+//a.
+
+int main()
+{
+    char a;
+    scanf("%c",&a);
+    
+    if((a>='a' && a<='z') || (a>='A' && a<='Z'))
+    {
+        printf("it is an alphabet");
+    }
+    
+    else
+    {
+        printf("not an alphabet");
+    }
+    
+    return 0;
+}
+
+*/
+
+
+
+//b. acsii value
+//A to Z - 65 to 90
+// a to z - 97 to 122
+
+// check ascii of inserted char and decide
+
+int main()
+{
+    char a;
+    scanf("%c",&a);
+    int a_asc=0;
+    
+    a_asc = a;      //stores int value of char a
+
+    if((a_asc>= 65 && a_asc<=90)  || (a_asc>=97 && a_asc<=122))
+    {
+        printf("%c - is an alphabet",a);
+    }
+    
+    else
+    {
+        printf("%c - not an alphabet",a);
+    }
+    
+    return 0;
+}
